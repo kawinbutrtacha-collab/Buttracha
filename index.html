@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My Website</title>
+
+<script>
+function MM_swapImgRestore() {
+  var i,x,a=document.MM_sr;
+  for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() {
+  var d=document;
+  if(d.images){
+    if(!d.MM_p) d.MM_p=[];
+    var i,j=d.MM_p.length,a=arguments;
+    for(i=0;i<a.length;i++){
+      if (a[i].indexOf("#")!=0){
+        d.MM_p[j]=new Image;
+        d.MM_p[j++].src=a[i];
+      }
+    }
+  }
+}
+
+function MM_findObj(n, d) {
+  if(!d) d=document;
+  var x=d.getElementById(n);
+  return x;
+}
+
+function MM_swapImage() {
+  var i,j=0,x,a=arguments;
+  document.MM_sr=[];
+  for(i=0;i<(a.length-2);i+=3){
+    if((x=MM_findObj(a[i]))!=null){
+      document.MM_sr[j++]=x;
+      if(!x.oSrc) x.oSrc=x.src;
+      x.src=a[i+2];
+    }
+  }
+}
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" onload="MM_preloadImages('menu/2.png','menu/4.png','menu/6.png','menu/8.png')">
+
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+
+<tr>
+<td colspan="2">
+<img src="banner/11.png" width="1000" height="250">
+</td>
+</tr>
+
+<tr>
+<td width="300">
+
+<table width="300" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+<td>
+<a href="index.html"
+onmouseover="MM_swapImage('Image7','','menu/2.png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="menu/1.png" id="Image7" name="Image7" width="300" height="75">
+</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="Product.html"
+onmouseover="MM_swapImage('Image8','','menu/4.png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="menu/3.png" id="Image8" name="Image8" width="300" height="75">
+</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="Sale.html"
+onmouseover="MM_swapImage('Image1','','menu/6.png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="menu/5.png" id="Image1" name="Image1" width="300" height="75">
+</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="Category.html"
+onmouseover="MM_swapImage('Image2','','menu/8.png',1)"
+onmouseout="MM_swapImgRestore()">
+<img src="menu/7.png" id="Image2" name="Image2" width="300" height="75">
+</a>
+</td>
+</tr>
+
+</table>
+
+</td>
+
+<td width="700">
+<img src="banner/เพิ่มหัวเรื่องย่อย.png" width="700" height="300">
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<img src="footer/2.png" width="1000" height="250">
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
